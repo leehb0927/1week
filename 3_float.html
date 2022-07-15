@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            line-height: 1;
+        }
+        ul {
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            max-width: 100%;
+        vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        header {
+            height: 100px;
+            background: #ccc;
+            width: 100%;
+            position: relative;
+        }
+        header h1 {
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+        }
+        header h1 a {
+            height: 100%;
+            display: block;
+        }
+        header .sns {
+            position: absolute;
+            left: 0;
+        }
+        header .login {
+            position: absolute;
+            right: 0;
+        }
+
+
+        .box1 {
+            height: 400px;
+            width: 100%;
+            background: #888;
+            position: relative;
+        }
+        .box1 .btn {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #f00;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .box1 .btn.prev {
+            left: 10px;
+        }
+        .box1 .btn.next {
+            right: 10px;
+        }
+        .box1 .navi {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box1 .navi span {
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            float: left;
+            border-radius: 100%;
+            margin-right: 5px;
+        }
+        .box1 span.active {
+            background: #f00;
+        }
+    </style>
+    <header>
+        <h1><a href="">logo</a></h1>
+        <div class="sns">sns</div>
+        <div class="login">login</div>
+    </header>
+
+    <section class="box1">
+        <div class="btn prev">prev</div>
+        <div class="btn next">next</div>
+        <div class="navi">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+    </section>
+
+
+    <style>
+        .box2 {
+            padding: 100px 0;
+        }
+        .box2 h2 {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 100px;
+        }
+        .box2 ul {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .box2 ul li {
+            float: left;
+            width: calc((100% - 20px) / 3);
+        }
+        .box2 ul li a {
+            display: block;
+            background: #f00;
+            padding: 10px;
+        }
+        .box2 ul li img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .box2 ul li p {
+            margin-top: 10px;
+            padding: 10px;
+            background: #fff;
+        }
+
+
+        .box3 {
+            padding: 100px 0;
+            background: #f00;
+        }
+        .box3 ul {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .box3 ul li {
+            height: 100px;
+            background: #fff;
+            margin-top: 10px;
+        }
+        .box3 ul li:first-child {
+            margin-top: 0;
+        }
+    </style>
+    <section class="box2">
+        <h2>hihi</h2>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./img.jpg" alt="">
+                    <p>hello</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img.jpg" alt="">
+                    <p>hello</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img.jpg" alt="">
+                    <p>hello</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <section class="box3">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </section>
+</body>
+</html>
